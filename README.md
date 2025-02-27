@@ -2,7 +2,7 @@
 
 
 <p align="center">
-![Logo da Loja de Aplicativos](assets/logo.png)
+![Imagem logo Loja de Aplicativos para Windows](/assets/logo.png)
 </p>
 
 ## Badges
