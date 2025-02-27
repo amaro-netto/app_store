@@ -63,7 +63,7 @@ Para executar o projeto localmente:
 
 ## Pessoas Contribuidoras
 
-*   [Seu Nome](https://github.com/seu-usuario) - Desenvolvedor Principal
+*   [Amaro Netto](https://github.com/amaro-netto) - Desenvolvedor Principal
 
 ## Licença
 
