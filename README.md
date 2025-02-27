@@ -1,5 +1,6 @@
 # 🎁 Loja de Aplicativos para Windows 🎁  
 
+
 <p align="center">
 ![Logo da Loja de Aplicativos](assets/logo.png)
 </p>
