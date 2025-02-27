@@ -40,3 +40,21 @@ APP_DETAILS = {
     "PJE Office": {"description": "Software para acesso ao PJe", "size": "200MB", "category": "Utilitário"},
     "Java": {"description": "Ambiente de execução para aplicativos", "size": "150MB", "category": "Desenvolvimento"}
 }
+
+APP_DOWNLOAD_URLS = {
+    "Adobe Acrobat Reader": "https://get.adobe.com/br/reader/",
+    "Google Chrome": "https://www.google.com/chrome/",
+    "Firefox": "https://www.mozilla.org/firefox/",
+    "Opera": "https://net.geo.opera.com/opera/stable/windows?utm_source=PWNgames&utm_medium=pa&utm_campaign=PWN_BR_HVR_9571_WEB_2676&edition=std-2&utm_id=9ba0c822f9b84965b58b885406d693db&http_referrer=https%3A%2F%2Fwww.opera.com%2Fget%2Fopera-gx%3Futm_medium%3Dpa%26utm_campaign%3DPWN_BR_HVR_9571_WEB_2676%26utm_id%3D9ba0c822f9b84965b58b885406d693db%26utm_source%3DPWNgames%26edition%3Dstd-2&utm_site=opera_com&utm_lastpage=opera.com%2F&dl_token=33309433",
+    "Safari": "https://www.apple.com/safari/",
+    "WinRAR": "https://www.rarlab.com/download.htm",
+    "Photoshop": "https://www.adobe.com/products/photoshop.html",
+    "Illustrator": "https://www.adobe.com/products/illustrator.html",
+    "Visual Studio Code": "https://code.visualstudio.com/",
+    "WhatsApp": "https://www.whatsapp.com/download",
+    "UltraViewer": "https://www.ultraviewer.net/",
+    "AnyDesk": "https://anydesk.com/download",
+    "Microsoft Office": "https://www.microsoft.com/pt-br/microsoft-365/get-started-with-office-2021",
+    "PJE Office": "https://www.pje.jus.br/portalpje/download",
+    "Java": "https://www.java.com/pt-BR/download/"
+}

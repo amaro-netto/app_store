@@ -1,6 +1,7 @@
+# ui/main_window.py
 from PyQt5 import QtWidgets, QtGui, QtCore
 from core.config import APPS, APP_ICONS, APP_DETAILS
-from core.installer import install_app, get_installed_version, get_available_version, remove_app
+from core.installer import InstallerThread
 import os
 
 class AppStore(QtWidgets.QMainWindow):
@@ -58,8 +59,6 @@ class AppStore(QtWidgets.QMainWindow):
             
             icon = self.get_icon_from_file(APP_ICONS.get(app, "assets/icons/default.png"))
             details = APP_DETAILS.get(app, {"description": "", "size": "", "category": ""})
-            installed_version = get_installed_version(app)
-            available_version = get_available_version(app)
             
             app_widget = QtWidgets.QWidget()
             app_widget.setStyleSheet("background-color: #f0f0f0; border-radius: 10px; padding: 10px;")
@@ -74,25 +73,14 @@ class AppStore(QtWidgets.QMainWindow):
             app_name.setAlignment(QtCore.Qt.AlignCenter)
             v_layout.addWidget(app_name)
             
-            version_info = QtWidgets.QLabel(f"Instalada: {installed_version}\nDisponível: {available_version}")
-            version_info.setAlignment(QtCore.Qt.AlignCenter)
-            v_layout.addWidget(version_info)
-            
             app_info = QtWidgets.QLabel(f"{details['category']} - {details['size']}\n{details['description']}")
             app_info.setAlignment(QtCore.Qt.AlignCenter)
             v_layout.addWidget(app_info)
             
             button = QtWidgets.QPushButton()
             button.setFixedWidth(200)
-            if not installed_version:
-                button.setText("Instalar")
-                button.clicked.connect(lambda _, a=app: self.install_selected_app(a))
-            elif installed_version and available_version and installed_version < available_version:
-                button.setText("Atualizar")
-                button.clicked.connect(lambda _, a=app: self.install_selected_app(a))
-            else:
-                button.setText("Remover")
-                button.clicked.connect(lambda _, a=app: self.remove_selected_app(a))
+            button.setText("Instalar")
+            button.clicked.connect(lambda _, a=app: self.install_selected_app(a))
             
             button.setStyleSheet(""
                 "QPushButton { background-color: #0078D7; color: white; border-radius: 5px; padding: 5px; }"
@@ -113,8 +101,27 @@ class AppStore(QtWidgets.QMainWindow):
     
     def install_selected_app(self, app_name):
         self.progress_bar.setValue(0)
-        QtCore.QTimer.singleShot(100, lambda: install_app(app_name, self.progress_bar))
+        self.progress_bar.setMaximum(100)
+        
+        # Inicia o download e instalação na thread
+        installer_thread = InstallerThread(app_name)
+        installer_thread.progress_signal.connect(self.update_progress)
+        installer_thread.finished_signal.connect(self.on_install_finished)
+        installer_thread.start()
+
+    def update_progress(self, progress):
+        self.progress_bar.setValue(progress)
+
+    def on_install_finished(self, success):
+        if success:
+            self.show_popup("Instalação concluída com sucesso!")
+        else:
+            self.show_popup("Falha ao instalar o aplicativo.")
     
-    def remove_selected_app(self, app_name):
-        self.progress_bar.setValue(0)
-        QtCore.QTimer.singleShot(100, lambda: remove_app(app_name, self.progress_bar))
+    def show_popup(self, message):
+        msg = QtWidgets.QMessageBox(self)
+        msg.setIcon(QtWidgets.QMessageBox.Information)
+        msg.setWindowTitle("Operação Concluída")
+        msg.setText(message)
+        msg.setStandardButtons(QtWidgets.QMessageBox.Ok)
+        msg.exec_()
