@@ -6,7 +6,7 @@ import os
 class AppStore(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Loja de Aplicativos")
+        self.setWindowTitle("Central de Software")
         self.setGeometry(100, 100, 900, 600)
         self.setWindowIcon(QtGui.QIcon("assets/icon.png"))  # Ícone do programa
         self.initUI()
@@ -18,7 +18,7 @@ class AppStore(QtWidgets.QMainWindow):
         
         # Logo no cabeçalho
         self.logo_label = QtWidgets.QLabel()
-        self.logo_label.setPixmap(QtGui.QPixmap("assets/logo_header.png").scaled(150, 150, QtCore.Qt.KeepAspectRatio))
+        self.logo_label.setPixmap(QtGui.QPixmap("assets/logo_header.png").scaled(510, 150, QtCore.Qt.KeepAspectRatio))
         self.logo_label.setAlignment(QtCore.Qt.AlignCenter)
         layout.addWidget(self.logo_label)
         
@@ -39,7 +39,7 @@ class AppStore(QtWidgets.QMainWindow):
         self.progress_bar.setValue(0)
         layout.addWidget(self.progress_bar)
         
-        self.footer = QtWidgets.QLabel("\u00a9 2025 Minha Empresa - Todos os direitos reservados", self)
+        self.footer = QtWidgets.QLabel("\u00a9 2025 Amaro Netto - Todos os direitos reservados", self)
         self.footer.setAlignment(QtCore.Qt.AlignCenter)
         layout.addWidget(self.footer)
         
