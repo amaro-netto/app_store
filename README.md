@@ -6,7 +6,7 @@
 [![HTML Valido](https://img.shields.io/badge/HTML-Validado-informational?style=flat&logo=html5&logoColor=white&color=2ECC71)](https://validator.w3.org/)
 [![CSS Valido](https://img.shields.io/badge/CSS-Validado-informational?style=flat&logo=css3&logoColor=white&color=2ECC71)](https://jigsaw.w3.org/css-validator/)
 [![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat&logo=python&logoColor=white)](https://www.python.org/)
-[![Status](https://img.shields.io/badge/Status-Concluído-success)](https://github.com/seu-usuario/seu-repositorio)
+[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue)](https://github.com/seu-usuario/seu-repositorio)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Índice
