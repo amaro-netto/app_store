@@ -39,7 +39,12 @@ Este projeto é uma **Loja de Aplicativos para Windows**, desenvolvida em Python
 **Demonstração:**
 
 *   [GitHub - Loja de Aplicativos](https://github.com/usuario/loja-de-aplicativos)
-*   ![EWFWEFWRF](https://github.com/user-attachments/assets/a6cda243-a896-476c-901b-d6aca5f34034)
+  
+![EWFWEFWRF](https://github.com/user-attachments/assets/a6cda243-a896-476c-901b-d6aca5f34034)
+
+**Foto:**
+
+![screencapture-127-0-0-1-5500-index-html-2025-03-15-00_33_16](https://github.com/user-attachments/assets/e3db578e-8178-4bdb-9010-6399a5c60940)
 
 
 ## Acesso ao Projeto
