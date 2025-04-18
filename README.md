@@ -1,4 +1,4 @@
-# 🎁 Loja de Aplicativos para Windows 🎁
+<h1 align="center"> 🎁 Loja de Aplicativos para Windows 🎁 </h1> 
  
 ![Imagem logo Loja de Aplicativos para Windows](assets/logo_header.png)
 
