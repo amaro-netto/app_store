@@ -3,9 +3,12 @@
 ![Imagem logo Loja de Aplicativos para Windows](assets/logo_header.png)
 
 ## Badges
-[![HTML Valido](https://img.shields.io/badge/HTML-Validado-informational?style=flat&logo=html5&logoColor=white&color=2ECC71)](https://validator.w3.org/)
-[![CSS Valido](https://img.shields.io/badge/CSS-Validado-informational?style=flat&logo=css3&logoColor=white&color=2ECC71)](https://jigsaw.w3.org/css-validator/)
-[![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![PyQt5](https://img.shields.io/badge/PyQt5-GUI%20Framework-green?logo=qt&logoColor=white)
+![QtWidgets](https://img.shields.io/badge/QtWidgets-Componentes%20UI-brightgreen?logo=qt&logoColor=white)
+![QtCore](https://img.shields.io/badge/QtCore-Eventos%20e%20Temporizadores-yellow?logo=qt&logoColor=white)
+![QtGui](https://img.shields.io/badge/QtGui-Imagens%20e%20Ícones-orange?logo=qt&logoColor=white)
+![Chocolatey](https://img.shields.io/badge/Chocolatey-Package%20Manager-8A4FFF?logo=chocolatey&logoColor=white)
 [![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue)](https://github.com/seu-usuario/seu-repositorio)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
