@@ -60,6 +60,7 @@ Para executar o projeto localmente:
 *   **QtWidgets**: Componentes para criar e gerenciar a interface gráfica.
 *   **QtCore**: Utilizado para temporizadores, manipulação de eventos, etc.
 *   **QtGui**: Para manipulação de imagens, como os ícones dos aplicativos.
+*   **Chocolatey**: Gerenciador de pacotes para Windows, utilizado para automatizar a instalação de softwares e dependências do projeto.
 
 ## Pessoas Contribuidoras
 
