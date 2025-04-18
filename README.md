@@ -25,11 +25,13 @@
 
 ## Descrição do Projeto
 
-Este projeto é uma **Loja de Aplicativos para Windows**, desenvolvida em Python utilizando o framework **PyQt5**. O objetivo é permitir que os usuários instalem, atualizem e removam aplicativos de forma simples e eficiente, com uma interface gráfica intuitiva.
+Este projeto é uma **Loja de Aplicativos para Windows**, desenvolvida em **Python 3** com **PyQt5** para a construção da interface gráfica. Seu principal objetivo é oferecer uma maneira simples, rápida e intuitiva de instalar, atualizar e remover aplicativos no sistema operacional Windows.
+
+A interface foi construída utilizando componentes do **QtWidgets**, com suporte a recursos visuais por meio do **QtGui**, além de controle de eventos e temporizações com **QtCore**. Para a instalação e gerenciamento de pacotes, a aplicação integra o uso do **Chocolatey**, um gerenciador de pacotes moderno para Windows, garantindo automação e eficiência nos processos.
 
 ## Status do Projeto
 
-✔️ **Concluído:** O projeto foi finalizado e todas as funcionalidades principais estão implementadas e funcionando corretamente.
+✔️ **Andamento:** O projeto esta em desenvolvimento.
 
 ## Funcionalidades e Demonstração da Aplicação
 
