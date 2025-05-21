@@ -25,10 +25,11 @@
 
 ## Descrição do Projeto
 
-Este projeto é uma **Loja de Aplicativos para Windows**, desenvolvida em **Python 3** com **PyQt5** para a construção da interface gráfica. Seu principal objetivo é oferecer uma maneira simples, rápida e intuitiva de instalar, atualizar e remover aplicativos no sistema operacional Windows.
+Este projeto apresenta uma Loja de Aplicativos para Windows que visa simplificar a gestão de software em ambientes corporativos com restrições para usuários comuns. Desenvolvida em Python 3 com PyQt5 para uma interface gráfica intuitiva, a aplicação elimina a necessidade de intervenção técnica para instalar, atualizar ou remover programas homologados.
 
-A interface foi construída utilizando componentes do **QtWidgets**, com suporte a recursos visuais por meio do **QtGui**, além de controle de eventos e temporizações com **QtCore**. Para a instalação e gerenciamento de pacotes, a aplicação integra o uso do **Chocolatey**, um gerenciador de pacotes moderno para Windows, garantindo automação e eficiência nos processos.
+Tradicionalmente, a instalação e remoção de softwares em máquinas corporativas exige o acionamento do setor de TI, gerando atrasos e sobrecarga de trabalho. Nossa Loja de Aplicativos resolve esse desafio, permitindo que o setor de TI catalogue e disponibilize programas pré-aprovados para instalação direta pelos usuários finais. Isso significa que seus colaboradores podem instalar os aplicativos permitidos pela empresa sem precisar de um técnico, agilizando o fluxo de trabalho e aumentando a autonomia.
 
+A interface do aplicativo foi construída utilizando componentes do QtWidgets, com recursos visuais aprimorados pelo QtGui e controle de eventos e temporização via QtCore. Para garantir automação e eficiência nos processos de instalação e gerenciamento, a aplicação se integra ao Chocolatey, um moderno gerenciador de pacotes para Windows.
 ## Status do Projeto
 
 ✔️ **Andamento:** O projeto esta em desenvolvimento.
